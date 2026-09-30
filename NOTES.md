@@ -7,4 +7,4 @@ I would add a `userId` reference field to the Task schema with an index and crea
 The immediate concern would be network payload size and DOM rendering lag from fetching all tasks at once. I would add server-side pagination (e.g., `?page=1&limit=20`) backed by a database index on `{ status: 1, createdAt: -1 }`, and use virtual scrolling on the frontend to keep the DOM light.
 
 ### 3. AI Tool Usage & Refinement
-Yes, an AI tool initially suggested exporting multiple components together as an object (`export default { TaskList, TaskItem }`). I changed this because importing an object as a default React component broke the JSX render in `App.js`, so I switched it back to exporting `TaskList` directly as the default component function.
+Being honest, i have only used AI for one of error fixing which was axios related code in `App.js` file i was getting error of 404 on API call and using AI tool i was able to fix that error and the code worked as expected.
